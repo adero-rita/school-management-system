@@ -1,0 +1,80 @@
+class student:
+   def_init_(self,student_id,name,age):
+      self.student_id=student_id
+      self.name = name
+      self.age =age
+      self.grades = []  #List to store grades of the student
+
+
+    def get_details(self):
+        return f"student ID: {self,student_id}, Name: {self.name}, Age: {self.age}"
+
+
+     def add_grade(self,grade):
+        self.grades.append(grade)
+        print(f"Grade {grade.grade} added for {self.name} in {grade.course.course_name}")
+
+
+class teacher:
+    def_init_(self,teacher_id,name, student):
+       self.teacher_id = teacher_id
+       self.name = name
+       self.subject = subject
+
+    def get_details(self):
+        return f"Teacher ID: {seft.teacher_id}, Name: {self.name}, subject: {self.subject}"
+
+    def assign_subject(self, new_subject):
+        self.subject=new_subject
+        print(f"{self.name} has been assigned to teach {self. subject}.")
+
+class Course:
+    def_init_(self, course_id, course_name, teacher):
+    self.course_id = course_id
+    self.course_name = course_name
+    self.teacher = teacher
+      
+    def add_student(self, student):
+        if len(self.student):
+            self.students.append(student)
+            print(f"students {student.name} has been added to room {self.room_number}.")
+        else:
+            print(f"Cannot add {student.name} to room {self.room_number}; capacity reached.")
+
+    def remove_student(self, student):
+        if student in self.students:
+            self.students.remove(student) 
+            print(f"student {student.name} has been removed from room {self.room_number}.")
+        else:
+            print(f"student {student.name} is not in room {self.room_number}.")
+            
+            
+     def get_students(self):
+        return [student.name for student in self.students]
+        
+class grade:
+    def_init_(self,grade_id, student, course, grade):
+       self.grade_id = grade_id
+       self.student = student
+       self.course = course
+       self.grade = grade
+       
+       
+     def get_grate_details(self)
+        return f"Grade ID: {self.grade_id}, student: {self.student.name}, course: {self.course.course_name}, Grade: {self.grade}" 
+        
+     def update_grade(self, new_grade):
+        self.grade = new_grade
+        print(f"Grade for {self,student,name} in {self.course_name} has been updated to {self.grade}.")
+         
+
+
+
+
+
+
+
+    
+
+        
+        
